@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  안드로이드의 view 화면은 xml 문법으로 구성됨 -->
+<!--  시작 태그와 끝 태그가 반드시 있어야 함 -->
+<!--  자식 태그가 없을 경우 시작 태그의 마지막에 ' / ' 를 사용하고 끝 태그를 생략 가능  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:id="@+id/main">
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="버튼 1, 컨텐츠의 크기만큼 태그의 길이를 줌" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="버튼 2" >
+  </Button>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="버튼 3"
+      android:layout_margin="10dp"/>
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="20dp"
+      android:text="버튼 4" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼1" />
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:visibility="visible" />
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼1"
+        android:id="@+id/btn2_show"/>
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:visibility="invisible"
+        android:id="@+id/btn2_target"/>
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼3"
+        android:id="@+id/btn2_hide"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼1"
+        android:id="@+id/btn3_show"/>
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:visibility="gone"
+        android:id="@+id/btn3_target"/>
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼3"
+        android:id="@+id/btn3_hide"/>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
