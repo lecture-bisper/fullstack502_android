@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:id="@+id/main">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+<!--    layout_weight : 부모 태그의 크기 중 빈 공간을 모두 채우는 속성 -->
+<!--    여러 태그에 걸쳐 layout_weight 속성이 존재할 경우 여러 태그의 layout_weight 총합을 전체 칸수로 설정하고, 각각 태그의 layout_weight 값을 전체 칸중에서 사용하는 칸의 크기로 사용함 -->
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="버튼 1"
+      android:layout_weight="2"
+      android:layout_marginHorizontal="10dp"/>
+
+<!--    안드로이드의 margin은 다른 View 클래스의 margin 공간과 겹치지 않음 -->
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="버튼 2"
+      android:layout_weight="5"
+      android:layout_marginHorizontal="10dp"/>
+  </LinearLayout>
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="버튼 3"
+    android:layout_weight="1"/>
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="버튼 4"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="버튼 5"
+      android:layout_weight="1"/>
+    <Button
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="버튼 6"
+      android:layout_weight="1"/>
+    <Button
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="버튼 7"
+      android:layout_weight="1"/>
+  </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

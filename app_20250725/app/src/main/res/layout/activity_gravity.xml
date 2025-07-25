@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:id="@+id/main"
+  android:gravity="center">
+
+<!--  View 클래스의 기본 위치는 왼쪽 상단 -->
+<!--  gravity : 지정한 View 의 컨텐츠의 위치를 정렬 -->
+<!--  layout_gravity : 지정한 View 자체의 위치를 정렬 -->
+  <TextView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:text="gravity 로 정렬"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:background="#FF0000"
+    android:gravity="center"
+    android:layout_gravity="center"/>
+</LinearLayout>
