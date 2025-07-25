@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/main">
+
+<!--  정렬 시 기준이 되는 View 는 반드시 id 속성이 있어야 함 -->
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/iv_android"
+    android:src="@mipmap/ic_launcher"/>
+
+<!--  View 위치 설정 -->
+<!--  layout_toStartOf : 지정한 View의 왼쪽에 View를 배치 -->
+<!--  layout_toEndOf : 지정한 View의 오른쪽에 View를 배치 -->
+<!--  layout_above : 지정한 View의 상단에 View를 배치 -->
+<!--  layout_below : 지정한 View의 하단에 View를 배치 -->
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="버튼 1"
+    android:layout_toEndOf="@id/iv_android"
+    android:layout_alignBottom="@id/iv_android"/>
+
+<!--  View의 정렬 -->
+<!--  layout_alignStart : 지정한 View의 왼쪽 테두리를 기준으로 View를 정렬 -->
+<!--  layout_alignEnd : 지정한 View의 오른쪽 테두리를 기준으로 View를 정렬-->
+<!--  layout_alignTop : 지정한 view의 상단 테두리를 기준으로 View를 정렬-->
+<!--  layout_alignBottom : 지정한 view의 하단 테두리를 기준으로 View를 정렬-->
+<!--  layout_alignBaseline : 지정한 View의 텍스트 컨테츠 기준선을 기준으로 View를 정렬 -->
+
+
+<!--  layout_alignParentStart : 부모 View 의 왼쪽 테두리를 기준으로 정렬 -->
+<!--  layout_alignParentEnd : 부모 View의 오른쪽 테두리를 기준으로 정렬-->
+<!--  layout_alignParentTop : 부모 View의 상단 테두리를 기준으로 정렬-->
+<!--  layout_alignParentBottom : 부모 View의 하단 테두리를 기준으로 정렬-->
+<!--  layout_centerHorizontal : 부모 View의 가로 중앙을 기준으로 정렬 -->
+<!--  layout_centerVertical : 부모 View의 세로 중앙을 기준으로 정렬-->
+<!--  layout_centerInParent : 부모 View의 정중앙을 기준으로 정렬 -->
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="버튼 2"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignBottom="@id/iv_android"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/iv_android"
+    android:layout_marginTop="10dp"
+    android:padding="5dp">
+
+    <ImageView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/iv_kakao"
+      android:src="@drawable/kakao"
+      android:layout_marginEnd="5dp"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="카카오톡"
+      android:layout_toEndOf="@id/iv_kakao"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="[기기 로그인 알람]"
+      android:layout_toEndOf="@id/iv_kakao"
+      android:layout_alignBottom="@id/iv_kakao"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7월 25일"
+      android:layout_alignParentEnd="true"
+      android:layout_alignTop="@id/iv_kakao"/>
+
+  </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
