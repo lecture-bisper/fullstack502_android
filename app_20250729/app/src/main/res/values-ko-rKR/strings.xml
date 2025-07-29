@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">app_20250729</string>
+  <string name="txt_data1">헬로</string>
+  <string name="txt_data2">월드</string>
+  <string name="txt_data3">코드에서 문자열 리소스 사용</string>
+  <string name="txt_font">다운로드한 폰트로 적용</string>
+</resources>

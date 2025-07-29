@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">app_20250729</string>
+  <string name="txt_data1">こんにちは</string>
+  <string name="txt_data2">世界</string>
+  <string name="txt_data3">コード内で文字列リソースを使用する</string>
+  <string name="txt_font">ダウンロードしたフォントで応募する</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">app_20250729</string>
+  <string name="txt_data1">Hello</string>
+  <string name="txt_data2">World</string>
+  <string name="txt_data3">Using string resources in your code</string>
+  <string name="txt_font">Apply with downloaded font</string>
+</resources>
