@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  dimens.xml 은 크기 관련 리소스 파일 -->
+<!--  각각의 리소스는 dimen 으로 태그를 생성하여 사용 -->
+<resources>
+  <dimen name="txt_size">10sp</dimen>
+</resources>
