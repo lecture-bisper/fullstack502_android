@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="8dp"
+  android:id="@+id/main">
+
+  <Button
+    android:id="@+id/btn_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/alert_notification"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_notification_action"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/alert_notification_action"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_notification_remote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/alert_notification_remote"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_notification_progress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/alert_notification_progress"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_notification_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/alert_notification_style"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/btn_toolbar"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
