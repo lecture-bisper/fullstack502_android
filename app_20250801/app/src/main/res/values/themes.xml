@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+<!--  안드로이드의 머티리얼 UI 라이브러리 3 버전에서 제공하는 스타일을 사용하고 있음 -->
+  <style name="Base.Theme.App_20250801" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Customize your light theme here. -->
+    <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--    <item> 태그의 name 속성은 이미 정해져 있음, 정해진 name 값을 입력 -->
+    <item name="colorPrimary">#FF0000</item>
+    <item name="statusBarBackground">#BB0000</item>
+    <item name="colorAccent">#00FF00</item>
+  </style>
+
+<!--  해당 스타일을 AndroidManifest.xml 에서 사용하여 현재 앱에 스타일을 적용 -->
+  <style name="Theme.App_20250801" parent="Base.Theme.App_20250801" />
+</resources>
