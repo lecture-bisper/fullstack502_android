@@ -37,3 +37,21 @@
 	2. Android - Resource (벡터 이미지, colors, dimens, styles, color 리소스 폴더)
 	3. Android - Resource (글꼴, 문자열 리소스, 다국어 지원)
 	4. Android - Resource (화면 방향에 따라 layout 다르게 사용하기)
+7. 7일차
+	1. Android - Activity (Intent, 엑티비티 전환하기)
+	2. Android - Activity (kotlin 파일 및 layout 파일 직접 생성하여 적용하기)
+	3. Android - Activity (다른 엑티비티로 데이터 전달하기, 엑티비티 종료 시 데이터 반환하기)
+	4. Android - Activity (Intent Filter 사용하기, 외부 앱에서 지정한 앱의 엑티비티 실행하기)
+	5. Android - Activity (엑티비티 생명주기 함수, 엑티비티 상태 저장 및 복구하기)
+8. 8일차
+	1. Android - Activity (권한 사용하기, Toast 메시지, Toast 메시지 콜백 사용하기, DatePicker, TimePicker, AlertDialog, AlertDialog List, AlertDialog Checkbox, AlertDialog Radio, Alert Sound, Alert Vibrator, Notification)
+9. 9일차
+	1. Android - Alert (상단 알림 터치 이벤트)
+	2. Android - Activity Alert (상단 알림 액션 버튼, 상단 알림 원격 메시지 전달, 상단 알림 스타일)
+	3. Android - Toolbar (제트팩 라이브러리, 액션바, 툴바 사용하기, 툴바의 뒤로가기 버튼)
+10. 10일차
+	1. Android - Toolbar (메뉴 사용하기, Menu UI 파일로 연동하기, 액션버튼, 검색버튼)
+	2. Android - Fragment (프래그먼트 사용하기, 프래그먼트 백스탭 사용, 프래그먼트 생명주기함수)
+	3. Android - RecyclerView (리사이클러뷰 사용하기, ViewHolder 생성, Adapter 생성, 리사이클러뷰와 어뎁터 연동)
+	4. Android - ViewPager2 (리사이클러뷰 사용하기, ViewHolder 생성, Adapter 생성, 리사이클러뷰와 어뎁터 연동, ViewPager2로 카톡 리스트 만들기)
+	5. Android - DrawerLayout (드로러 레이아웃 사용하기)

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:id="@+id/drawer">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#FFFF01"
+      android:text="그냥 보이는 영역"
+      android:textSize="24sp"
+      android:gravity="center"/>
+  </LinearLayout>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="DRAWER Layout 영역"
+    android:textSize="24sp"
+    android:background="#EF57A8"
+    android:gravity="center"
+    android:layout_gravity="end"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+
