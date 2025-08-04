@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="8dp">
+
+  <ImageView
+    android:id="@+id/iv_icon"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+    android:src="@drawable/kakao"
+    android:layout_marginEnd="8dp"/>
+
+  <TextView
+    android:id="@+id/tv_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="이름"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:layout_toEndOf="@id/iv_icon" />
+
+  <TextView
+    android:id="@+id/tv_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="카톡 내용"
+    android:textSize="16sp"
+    android:layout_toEndOf="@id/iv_icon"
+    android:layout_alignBottom="@id/iv_icon"
+    android:layout_marginStart="4dp"/>
+
+  <TextView
+    android:id="@+id/tv_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="15:04"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp" />
+</RelativeLayout>
