@@ -52,6 +52,12 @@
 10. 10일차
 	1. Android - Toolbar (메뉴 사용하기, Menu UI 파일로 연동하기, 액션버튼, 검색버튼)
 	2. Android - Fragment (프래그먼트 사용하기, 프래그먼트 백스탭 사용, 프래그먼트 생명주기함수)
-	3. Android - RecyclerView (리사이클러뷰 사용하기, ViewHolder 생성, Adapter 생성, 리사이클러뷰와 어뎁터 연동)
-	4. Android - ViewPager2 (리사이클러뷰 사용하기, ViewHolder 생성, Adapter 생성, 리사이클러뷰와 어뎁터 연동, ViewPager2로 카톡 리스트 만들기)
-	5. Android - DrawerLayout (드로러 레이아웃 사용하기)
+	3. Android - RecyclerView (리사이클러뷰 사용하기, ViewHolder 생성, Adapter 생성, 리사이클러뷰와 어뎁터 연동, 카톡 리스트 만들기)
+	4. Android - ViewPager2 (뷰페이저2 사용하기, 프래그먼트와 뷰페이저 연동)
+	5. Android - DrawerLayout (드로어 레이아웃 사용하기)
+11. 11일차
+	1. Android - DrawerLayout (드로어 레이아웃 사용 안되던 부분 수정)
+	2. Android - BooadcastReceiver (브로드캐스트 리시버 사용하기, 베터리 정보 가져오기)
+	3. Android - Service (서비스 사용하기, startService(), bindService())
+	4. Android - Provider (컨텐츠 프로바이더 사용하기, 카메라 앱 / 전화앱 / 연락처 앱 / 갤러리 앱 호출)
+	5. Android - Provider (컨텐츠 프로바이더 사용하기, 갤러리 앱에서 사진 가져오기)
