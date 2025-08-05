@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="16dp"
+  android:id="@+id/main" >
+
+  <Button
+    android:id="@+id/btn_receiver"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="브로드캐스트 리시버 사용하기"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="서비스 사용하기"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_provider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="컨텐츠 프로바이더 사용하기"
+    style="@style/btnMarginStyle" />
+
+</LinearLayout>
