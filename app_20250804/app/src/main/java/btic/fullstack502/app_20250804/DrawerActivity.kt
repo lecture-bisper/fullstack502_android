@@ -24,12 +24,14 @@ class DrawerActivity : AppCompatActivity() {
       insets
     }
 
+//    액션바 혹은 툴바를 적용 시 메뉴가 출력되는 토글 버튼을 설정하여 사용
     toggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opened, R.string.drawer_closed)
     supportActionBar?.setDisplayHomeAsUpEnabled(true)
     toggle.syncState()
   }
 
   override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//    이벤트가 토글 버튼에서 발생하면 동작
     if (toggle.onOptionsItemSelected(item)) {
       return true
     }

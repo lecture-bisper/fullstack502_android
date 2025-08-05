@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 드로어 레이아웃으로 기본 레이아웃을 설정 -->
 <androidx.drawerlayout.widget.DrawerLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
@@ -6,6 +7,8 @@
   android:orientation="vertical"
   android:id="@+id/drawer">
 
+<!--  일반 UI 부분 -->
+<!--  너비와 높이를 부모의 크기만큼 모두 사용하도록 설정 -->
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,13 +23,16 @@
       android:gravity="center"/>
   </LinearLayout>
 
+<!--  드로어 레이아웃으로 표시할 UI 부분 -->
+<!--  너비와 높이를 부모의 크기만큼 사용하도록 설정 -->
+<!--  layout_gravity 설정이 필수, start, end, left, right 으로 설정 -->
   <TextView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="DRAWER Layout 영역"
-    android:textSize="24sp"
+    android:layout_gravity="start"
     android:background="#EF57A8"
     android:gravity="center"
-    android:layout_gravity="end"/>
+    android:text="DRAWER Layout 영역"
+    android:textSize="24sp" />
 </androidx.drawerlayout.widget.DrawerLayout>
 
