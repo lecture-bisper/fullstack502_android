@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:id="@+id/main">
+
+  <Button
+    android:id="@+id/btn_start_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="startService() 로 서비스 실행"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="4dp" />
+
+  <Button
+    android:id="@+id/btn_stop_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="stopService() 로 서비스 정지"
+    style="@style/btnMarginStyle"/>
+
+  <Button
+    android:id="@+id/btn_bind_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="bindService() 로 서비스 실행"
+    style="@style/btnMarginStyle"/>
+
+  <Button
+    android:id="@+id/btn_unbind_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="unbindService() 로 서비스 정지"
+    style="@style/btnMarginStyle"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
