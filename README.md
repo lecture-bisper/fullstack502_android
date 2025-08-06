@@ -61,3 +61,7 @@
 	3. Android - Service (서비스 사용하기, startService(), bindService())
 	4. Android - Provider (컨텐츠 프로바이더 사용하기, 카메라 앱 / 전화앱 / 연락처 앱 / 갤러리 앱 호출)
 	5. Android - Provider (컨텐츠 프로바이더 사용하기, 갤러리 앱에서 사진 가져오기)
+12. 12일차
+	1. Android - Service (MP3 플레이어 만들기)
+	2. Android - SQLite (데이터베이스 사용하기)
+	3. Android - File (내부 저장소 사용, 외부 저장소 사용, 공용 저장소 사용)
