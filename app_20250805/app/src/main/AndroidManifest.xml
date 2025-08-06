@@ -8,15 +8,11 @@
     android:name="android.hardware.telephony"
     android:required="false" />
 
-  <uses-permission android:name="android.permission.CALL_PHONE" />
-  <!-- 안드로이드 기본 앱 중 주소록 정보를 가져오는 권한 -->
-  <uses-permission android:name="android.permission.READ_CONTACTS" />
-
-<!--  안드로이드 기기의 카메라 사용 권한 -->
+  <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 안드로이드 기본 앱 중 주소록 정보를 가져오는 권한 -->
+  <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 안드로이드 기기의 카메라 사용 권한 -->
   <uses-feature
     android:name="android.hardware.camera"
-    android:required="false" />
-<!--  안드로이드 카메라 앱 사용 권한 -->
+    android:required="false" /> <!-- 안드로이드 카메라 앱 사용 권한 -->
   <uses-permission android:name="android.permission.CAMERA" />
 
   <application
@@ -28,6 +24,14 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.App_20250805">
+    <service
+      android:name=".MP3Service"
+      android:enabled="true"
+      android:exported="true"></service>
+
+    <activity
+      android:name=".MP3PlayerActivity"
+      android:exported="false" />
     <activity
       android:name=".PhotoActivity"
       android:exported="false" />

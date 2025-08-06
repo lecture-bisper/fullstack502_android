@@ -29,4 +29,11 @@
     android:text="컨텐츠 프로바이더 사용하기"
     style="@style/btnMarginStyle" />
 
+  <Button
+    android:id="@+id/btn_mp3player"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="서비스로 MP3 파일 재생하기"
+    style="@style/btnMarginStyle" />
+
 </LinearLayout>
