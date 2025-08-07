@@ -65,3 +65,6 @@
 	1. Android - Service (MP3 플레이어 만들기)
 	2. Android - SQLite (데이터베이스 사용하기)
 	3. Android - File (내부 저장소 사용, 외부 저장소 사용, 공용 저장소 사용)
+13. 13일차
+	1. Android - PhoneState (휴대폰 통화상태 감지, 전화번호 가져오기, 네트워크 상태 확인)
+	2. Android - PhoneState (네트워크 통신, Volley 라이브러리, 문자열 통신, Json 통신)

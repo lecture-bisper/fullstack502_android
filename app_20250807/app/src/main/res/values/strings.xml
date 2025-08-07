@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">app_20250807</string>
+  <string name="btn_phone_state">전화 상태 감지하기</string>
+  <string name="btn_call_state">통화 상태 이벤트 사용</string>
+  <string name="btn_get_phone_number">전화번호 가져오기</string>
+  <string name="btn_network_state">네트워크 상태 확인하기</string>
+  <string name="btn_http_connection">HTTP 통신하기</string>
+</resources>
