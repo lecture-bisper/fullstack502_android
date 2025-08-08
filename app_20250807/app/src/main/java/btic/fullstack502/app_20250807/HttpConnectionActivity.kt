@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import btic.fullstack502.app_20250807.data.Kobis
+import btic.fullstack502.app_20250807.data.KobisJson
 import btic.fullstack502.app_20250807.databinding.ActivityHttpConnectionBinding
 import com.android.volley.Request
 import com.android.volley.Response
@@ -17,6 +18,7 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import org.json.JSONObject
+import retrofit2.Call
 
 class HttpConnectionActivity : AppCompatActivity() {
 
@@ -119,7 +121,47 @@ class HttpConnectionActivity : AppCompatActivity() {
     }
 
     binding.btnRetrofitRequestJson.setOnClickListener {
+//      사용자가 지정한 인터페이스를 사용하는 Retrofit 객체 생성
+      val api = KobisRetrofitClientJson.instance
+//      사용자가 지정한 인터페이스의 메소드를 호출, Call 클래스 타입의 객체를 가져옴
+      val call = api.getDailyBoxOfficeListJson(
+        key = "c55013eadce1f0005fae142c556a228d",
+        targetDt = "20250807"
+      )
 
+//      Call클래스 타입의 객체를 통해서 통신을 진행하고 결과를 받아옴
+//      enqueue() : 지정한 서버와 통신을 시작하는 메소드
+      call.enqueue(object: retrofit2.Callback<KobisJson> {
+//        통신 성공 시 동작할 소스
+        override fun onResponse(call: Call<KobisJson?>, response: retrofit2.Response<KobisJson?>) {
+          if (response.isSuccessful) {
+//            서버에서 받아온 데이터를 출력
+            val kobisData = response.body()
+            var result = ""
+
+            kobisData?.boxOfficeResult?.dailyBoxOfficeList?.forEach {
+              Log.d("**fullstack502**", "### 순위 : ${it.rank}, 제목 : ${it.movieNm}, 관객수 : ${it.audiCnt} ###")
+              result += "순위 : ${it.rank}, 제목 : ${it.movieNm}, 관객수 : ${it.audiCnt}\n"
+            }
+            binding.tvResult.text = result
+
+//            val boxOfficeResult = kobisData?.boxOfficeResult
+//            val dailyBoxOfficeList = boxOfficeResult?.dailyBoxOfficeList
+//
+//            for (item in dailyBoxOfficeList!!) {
+//              Log.d("**fullstack502**", "### 순위 : ${item.rank}, 제목 : ${item.movieNm}, 관객수 : ${item.audiCnt} ###")
+//            }
+          }
+          else {
+            Log.d("**fullstack502**", "### 응답 실패 : ${response.errorBody().toString()} ###")
+          }
+        }
+
+//        통신 실패 시 실행할 소스
+        override fun onFailure(call: Call<KobisJson?>, t: Throwable) {
+          Log.d("**fullstack502**", "### 서버 요청 실패 : ${t.message} ###")
+        }
+      })
     }
 
     binding.btnUrlClear.setOnClickListener {
