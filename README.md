@@ -68,3 +68,8 @@
 13. 13일차
 	1. Android - PhoneState (휴대폰 통화상태 감지, 전화번호 가져오기, 네트워크 상태 확인)
 	2. Android - PhoneState (네트워크 통신, Volley 라이브러리, 문자열 통신, Json 통신)
+14. 14일차
+	1. Android - Http Network (Retrofit 라이브러리 통신)
+	2. Android - Http Network (Retrofit 라이브러리 통신, 스프링 백엔드 서버)
+	3. Android - Http Network (Retrofit 라이브러리 통신, 안드로이드 앱)
+	4. Android - Glide (Glide 라이브러리 사용하기)

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:id="@+id/main">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/iv_glide_image" />
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#33000000"
+        android:layout_marginVertical="8dp" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/et_glide"
+          android:hint="가져올 이미지 URL을 입력하세요"
+          android:maxLines="5"
+          android:layout_marginHorizontal="8dp"/>
+
+        <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn_glide_use"
+          android:text="Glide를 사용하여 원격지 이미지 로딩"
+          android:layout_marginTop="4dp"
+          android:layout_marginHorizontal="8dp"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
